@@ -1,0 +1,42 @@
+#aboutMe{
+    margin-top:5%;
+    background-image: url("../../img/stripes-circle.png");
+    background-position: 10% 85%;
+    background-repeat: no-repeat;
+
+    @include smartphone{
+        background-image: none;
+    }
+}
+
+.aboutMeTextColumn{
+    padding-right:2%;
+    
+    p{
+        line-height:2;
+        font-family: $p;
+    }
+}
+
+.lineHeight{
+	line-height: 2;
+}
+
+.downloadResume {
+    text-decoration: none;
+	color:$highlight;
+	padding-bottom:5%;
+    width:100%;
+    font-family:$font;
+    
+    img{
+        padding-right:2%;
+    }
+    
+}
+.downloadResume:hover{
+    list-style: none;
+    text-decoration: none;
+    color:$light;
+    padding-bottom:5%;
+}

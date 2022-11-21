@@ -1,0 +1,71 @@
+#testimonials{
+    background-image: url("../.././img/background-image-waves.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top:5%;
+    background-color: $backgroundLight;
+}
+
+.carousel-inner{
+    padding-bottom:5%;
+}
+
+.carousel-item{
+    padding-top:10%;
+    text-align: center;
+    img{
+        padding-bottom:3%;
+    }
+    @include smartphone{
+        padding-top:30%;
+        padding-bottom:10%;
+	}
+}
+
+     
+.comments{
+    font-size:20px;
+    font-weight:$font-semibold;
+    line-height: 150%;
+    color:$dark;
+    padding-top:5%;
+    text-align: center;
+    font-family:$font;
+
+    @include smartphone{
+		font-size:15px;
+    }
+    @include tablet{
+        font-size:14px;
+    }
+}
+
+.signature{
+    font-family:$font;
+    text-align: center;
+    color:$dark;
+    padding-bottom:5%;
+    padding-top:3%;
+    @include headings($p,$font-regular, $font, $light);
+}
+ 
+
+.carousel-control-prev{
+    padding-top: 5%;
+
+    @include smartphone{
+		display:none;
+	}
+}
+
+.carousel-control-next{
+    padding-top: 5%;
+
+    @include smartphone{
+		display:none;
+	}
+}
+
+.carousel-indicators{
+    color:$dark;
+}

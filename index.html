@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>JP | UI/UX Designer & Front-End developer from Argentina to the world.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="I'm a full stack designer from Buenos Aires, Argentina to the world. If you have a project in mind, click here and let's talk about it!">
+	<meta name="keywords" content="website, web design, apps, editorial, ilustrations, packaging, packaging design, ui/ux, UI Design, user interfase, user experience, digital design, digital art">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/309e155de0.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<meta name="theme-color" content="#ff2365" /><!--cambio de color barra navegador chrome-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff2365"> <!--cambio de colo barra navegador safari-->
+	<link rel="icon" href="img/logo-fav.png" type="image/png" sizes="16x16">
+	<!-- Hotjar Tracking Code for https://jpoydesign.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2628966,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBMCP9Q8GM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CBMCP9Q8GM');
+</script>
+</head>
+<body oncontextmenu="window.alert('Ups! gracias por querer llevarme, pero no esta permitido copiar este contenido. Para mas info, escribime!');return false;">
+	<!--Boton arriba-->
+	<button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+<!-- Hero Section -->
+	<div class="container-fluid nopad" id="top">
+		<div class="hero main">
+			<!--header-->
+			<div class="container">
+				<div class=" row hero__nav">
+				<div class="col hero__nav__logo">
+					<a href="#top"><img src="./img/jp-logo-blanco.png" alt="logo"></a>
+				</div>
+				<div class="col hero__nav__hamburger">
+					<img src="./img/bars.png" alt="menu" onclick="openNav()">
+				</div>
+			</div>
+			<div class="row align-self-center">
+				<div class=" col-lg-12 col-sm-12 col-xs-12">
+					<div class="hero__presentation">
+						<h1 class="hero__presentation__title">Hello<span class="magenta">.</span></h1>
+						<h2 class="hero__presentation__subheading">My name is Julieta,</h2>
+						<h4>and I'm a Full-Stack Designer.</h4>
+						<a href="#portfolio" class="button">PROJECTS</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--menu animado-->
+	<!-- menu full viewport-->
+	<div id="myNavBar" class="overlayMenu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlayMenuNavBar">
+				<ul>
+					<li><a href="#top" onclick="closeNav()">Home</a></li>
+					<li><a href="#aboutMe" onclick="closeNav()">About Me</a></li>
+					<li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
+					<li><a href="#contact" onclick="closeNav()">Contact</a></li>
+				</ul>
+			</div>
+	</div>
+<!--fin hero -->
+<!--Servicios-->
+	<div class="container nopad images">
+		<div class="row justify-space-between smallDevicesWidth">
+			<div class="col-md-6 col-sm-12 col-xs-12 servicesArrowRight">
+				<h3>I'm glad you're here!</h3>
+				<h3><span class="font500">Let's see what can we do <span class="underlineText">together.</span></span><img src="./img/arrow-right.png" alt="right arrow"></h3>
+				<div class="imageSpace smallDevicesImgs">
+					<img src="./img/landing-mac-back.png" alt="notebook screen showing up a landing page">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 imgPosition">
+				<img src="./img/app-login-screen.png" alt="Mobile device showing an app login form">
+			</div>
+		</div>
+	</div>
+	
+<!--portfolio-->
+	<div class="container-fluid nopad" id="portfolio">
+		<div class="row justify-content-center">
+			<div class="col-md-8 col-sm-6 col-xs-12 navPosition" id="myBtnContainer">
+				<ul>
+					<li><span class="btn activeCategory" onclick="filterSelection('all')">All</span></li>
+					<li><span class="btn" onclick="filterSelection('branding')">Branding</span></li>
+					<li><span class="btn" onclick="filterSelection('websites/apps')">Websites/Apps</span></li>
+					<li><span class="btn" onclick="filterSelection('ilustraciones')">Ilustrations</span></li>
+				</ul>
+			</div>
+			<div class="marqueeContainer">
+				<div class="marquee">
+				<h1>Portfolio</h1>
+				<h1>/</h1>
+				<h1>Portfolio</h1>
+				<h1>/</h1>
+				<h1>Portfolio</h1>
+				<h1>/</h1>
+				<h1>Portfolio</h1>
+				<h1>/</h1>
+			</div>
+		</div>
+
+	</div>
+<!--Titulo portfolio mobile-->
+	<div class="container-fluid nopad" id="portfolioMobile">
+		<div class="row marqueeContainer">
+			<div class="marquee">
+			<h1>Portfolio</h1>
+			<h1>/</h1>
+			<h1>Portfolio</h1>
+			<h1>/</h1>
+			<h1>Portfolio</h1>
+			<h1>/</h1>
+			<h1>Portfolio</h1>
+			<h1>/</h1>
+		</div>
+		</div>
+	</div>
+
+	<div class="container-fluid nopad">
+		<div class="row no-gutters portfolioCentered">
+			<div class="col-md-3 column workHover branding">
+				  <img src="./img/bos-main.jpg" alt="Bells of Steel" class="img-fluid" width="100%" height="auto">
+					<div class="workOverlay">
+						<a href="./views/bellsofsteel.html">
+							<h4>Bells of Steel</h4>
+							<p>BRANDING</p>
+						</a>
+					</div>
+			</div>
+			<div class="col-md-3 column workHover websites/apps">
+			  <img src="./img/beauty-main.jpg" alt="Cuidado Personal" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+					<a href="./views/beauty.html">
+						<h4>Beauty Care</h4>
+						<p>WEBSITES/APPS</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-3 column workHover websites/apps">
+			  <img src="./img/health-main.jpg" alt="Websites sobre salud" class="img-fluid" width="100%" height="auto">
+			  <div class="workOverlay">
+				<a href="./views/health.html">
+					<h4>Healthcare</h4>
+					<p>WEBSITES/APPS</p>
+				</a>
+				</div>
+			</div>
+			<div class="col-md-3 column workHover branding">
+			  <img src="./img/editorial-main.jpg" alt="Estampas" class="img-fluid" width="100%" height="auto">
+			  <div class="workOverlay">
+				<a href="./views/editorial.html">
+					<h4>Editorial</h4>
+					<p>EDITORIAL</p>
+				</a>
+				</div>
+			</div>
+			<div class="col-md-3 column workHover branding">
+				<img src="./img/dreambodytea-main.jpg" alt="Dream body tea" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/dreambodytea.html">
+					  <h4>Dream Body Tea</h4>
+					  <p>BRANDING</p>
+				  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-3 column workHover websites/apps">
+				<img src="./img/web-home-food-cover.jpg" alt="Webs sobre articulos para el hogar" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/home.html">
+					  <h4>Home</h4>
+					  <p>WEBSITES/APPS</p>
+				  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-3 column workHover branding">
+				<img src="./img/neuday-main.jpg" alt="Neu Day guardando packaging en una bolsa" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/neuday.html">
+					  <h4>Neu Day</h4>
+					  <p>BRANDING</p>
+				  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-3 column workHover websites/apps">
+				<img src="./img/app-main.jpg" alt="incio de sesion aplicación" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/apps.html">
+					  <h4>APPS</h4>
+					  <p>WEBSITES/APPS</p>
+				  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-3 column workHover ilustraciones">
+				<img src="./img/espiral-main.jpg" alt="Cuadro con lámina de una K de picas" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/espiral.html">
+					  <h4>ESPIRAL</h4>
+					  <p>ILUSTRATIONS</p>
+				  </a>
+				  </div>
+			  </div>
+			  <div class="col-md-3 column workHover ilustraciones">
+				<img src="./img/flicks-main.jpg" alt="Seleccionando pelicula desde la app para reproducir en el televisor" class="img-fluid" width="100%" height="auto">
+				<div class="workOverlay">
+				  <a href="./views/flicks.html">
+					  <h4>FLICKS</h4>
+					  <p>UI/UX CASE STUDY</p>
+				  </a>
+				  </div>
+			  </div>
+		</div>
+<!--fin portfolio-->
+<!--sobre mi-->
+		<div class="container-fluid nopad smallDevicesWidth" id="aboutMe">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-4 col-xs-12 aboutMeTextColumn">
+					<h2>About Me</h2>
+					<p>My name is Julieta, I was born and raise in Buenos Aires, Argentina. I went to the Palermo University were I get my degree in graphic design. Since that day, I've been working and learning all I can to improve my skills.</p>
+     <p>Currently I'm working as a visual senior designer for different clients around the world.</p>
+     <p>If you want know more about me, which tools I work, the studios were I've worked, download my full resume. And if you have a project in mind, do not hesitate in reaching me out clicking the button below.</p>
+					<div class="row">
+						<a href="#" class="downloadResume"> <img src="./img/arrow-down.png" alt="flecha para abajo"> download resume</a>
+					</div>
+					<div class="row">
+						<a href="#contacto" class="button">LET'S DO SOMETHING TOGETHER</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-xs-12 spaceImgSmallDevices">
+					<img src="./img/jp-picture.png" alt="foto de Julieta" class="img-fluid">
+					<h3>Making projects real,</h3>
+					<h3>since 2008.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--fin sobre mi -->
+<!-- testimonios-->
+	<div id="testimonials" class="carousel slide" data-ride="carousel">
+
+		<!-- carousel -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5">
+						<p class="comments">Julieta is fantastic! Love her style and she is very easy to communicate with. Always creates wonderful work, even with little instruction.</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">EVIE NUFAL</p>
+				</div>
+			</div>
+			<!--item 2-->
+			<div class="carousel-item">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5">
+						<p class="comments">I loved working with Julieta! She is professional, talented, and wants the best for your project. She made this project so fun and stress-free! I hope I get to work with her again very soon. She has such an eye for design and you will not be disappointed!</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">NANCY TSAUR</p>
+				</div>
+			</div>
+			<!--item 3-->
+			<div class="carousel-item">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5">
+						<p class="comments">Julieta is doing a fantastic job! Great skills, communication and always delivers what she promises!</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">VALENTIN</p>
+				</div>
+			</div>
+			<!--item 4-->
+			<div class="carousel-item">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-5 col-md-5">
+						<p class="comments">Julieta, has a solid designer background knowledge. She guides you from the basical concepts of design to the lastest techniches of visual design,advicing from the very beginning and when required, being very emphatic and entusiastic. She really love what she does and you notice that from the first conversation. Definitely, she's the designer I want to have as part of company team</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">TONI</p>
+				</div>
+			</div>
+			<!--item 5-->
+			<div class="carousel-item">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5">
+						<p class="comments">By far the best graphic designer I've worked with. I'm so glad to have found her! Great ideas and quick turnaround time</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">CHELSEA DOWNS</p>
+				</div>
+			</div>
+			<!--item 6-->
+			<div class="carousel-item">
+				<div class="row justify-content-center">
+					<img src="./img/quote.png" alt="comillas">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-5">
+						<p class="comments">Julieta was FANTASTIC! She was extremely quick and did very high quality work. Highly recommended!</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<p class="signature">UNIVERSITY OF TORONTO</p>
+				</div>
+			</div>
+
+			<!-- flechitas -->
+		<a class="carousel-control-prev" href="#testimonials" data-slide="prev">
+			<img src="./img/carousel-left.png" alt="Flecha a la izquierda">
+		  </a>
+		  <a class="carousel-control-next" href="#testimonials" data-slide="next">
+			  <img src="./img/carousel-right.png" alt="Flecha a la derecha">
+		  </a>
+
+		</div>
+		
+		
+		 <!--fin testimonios-->
+		<!--Contacto-->
+	<div id="contact" class="row justify-content-center">
+		<div class="col-lg-3 col-md-5">
+			<h2>Get in Touch!</h2>
+			<p>If you have a project in mind, want to ask for a quote or even just to say hi!, do not hesitate in fill the form. But, if you're not a big fan of forms you can reach me out in any of the following social media available.&#128521;</p>
+			<p><a href="mailto:hello@jpoydesign.com?subject=Mail enviado desde la web" class="downloadResume">hello@jpoydesign.com</a></p>	
+			<div class="row ">
+				<div class="col-xl-2 col-sm-3 nopad">
+					<a href="https://dribbble.com/jpoygd" target="_blank" class="socialMedia"><img src="./img/dribble.png" alt="Dribbble"></a>
+				</div>
+				<div class="col-xl-2 col-sm-3 nopad">
+					<a href="https://www.behance.net/jpoygd" target="_blank" class="socialMedia"><img src="./img/behance.png" alt="Behance"></a>
+				</div>
+				<div class="col-xl-2 col-sm-3 nopad">
+					<a href="https://www.linkedin.com/in/julietapdg/" target="_blank" class="socialMedia"><img src="./img/linkedin-in.png" alt="Linkedin"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-lg-4 col-md-5">
+			<form action="./assets/form.php" method="POST">
+				<input type="text" name="name" placeholder="Name"><br>
+				<input type="text" name="email" placeholder="Email"><br>
+				<textarea name="message" for="mensaje" id="#" cols="30" rows="10" placeholder="Message"></textarea><br>
+				<input type="submit" name="submit" value="Submit" class="button">
+			</form>
+		</div>
+	</div>
+<!--fin contacto-->
+	 </div>
+<!--footer desktop-->
+	 <div class="container-fluid nopad footer">
+		<div class="row justify-content-center bottomPaddingFooter">
+			<div class="col-xl-6">
+				<h2>From Buenos Aires,</h2>
+				<h2 class="magenta">to the world.</h2>
+				<div class="row justify-content-start nopad phoneEmailContact">
+					<div class="col-lg-3 nopad">
+						<span class="phoneEmailContact"><i class="fas fa-mobile-alt"></i><p>(+54) 9 11 5809 5369</p></span>
+					</div>
+					<div class="col-lg-3 nopad">
+						<span class="phoneEmailContact"><i class="far fa-paper-plane"></i><p>hello@jpoydesign.com</p></span>
+					</div>
+				</div>
+				<div class="row nopad copyright">
+					<p>© 2022 jpoydesign.com. All rights reserved.</p>
+				</div>
+			</div>
+			<div class="col-xl-2 align-self-end ">
+				<div class="row nopad socialMediaIcons">
+					<div class="col-lg-6">
+						<img src="./img/dot-white.png" alt="linea blanca">
+					</div>
+					<div class="col-lg-2">
+						<a href="https://dribbble.com/jpoygd" target="_blank">
+							<i class="fab fa-dribbble "></i>
+						</a>
+					</div>
+					<div class="col-lg-2 ">
+						<a href="https://www.behance.net/jpoygd" target="_blank">
+							<i class="fab fa-behance "></i>
+						</a>
+					</div>
+					<div class="col-lg-2">
+						<a href="https://www.linkedin.com/in/julietapdgvisualdesigner/?locale=en_US" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+<!--fin footer desktop-->
+<!--footer mobile-->
+	 <div class="footerMobile">
+		 <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-2">
+					
+					<a herf="https://api.whatsapp.com/send?phone=5491158095369?text=Hola%20tengo%20un%20proyecto%20en%20mente!">
+						<i class="fas fa-mobile-alt"></i>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="mailto:hello@jpoydesign.com?subject=Mail enviado desde la web">
+						<i class="far fa-paper-plane"></i>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://dribbble.com/jpoygd" target="_blank">
+						<i class="fab fa-dribbble "></i>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.behance.net/jpoygd" target="_blank">
+						<i class="fab fa-behance "></i>
+					</a>
+				</div>
+				<div class="col-2">
+					<a href="https://www.linkedin.com/in/julietapdg/" target="_blank">
+						<i class="fab fa-linkedin-in"></i>
+					</a>
+				</div>
+			 </div>
+			 <div class="row copyright justify-content-center">
+				<p>© 2022 jpoydesign.com. All Rights Reserved.</p>
+			</div>
+		 </div>
+	 </div>
+<!--fin footer mobile-->
+
+
+<script src="./assets/jsScripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

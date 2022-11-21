@@ -1,0 +1,103 @@
+
+#portfolio{
+	margin-top:5%;
+    z-index:2;
+    font-family:$font;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        text-decoration: none;
+    }
+    li{
+        padding:5% 2%;
+    }
+    span{
+        font-size:14px;
+        letter-spacing: 2px;
+    }
+    h1{
+        opacity: 0.1;
+        font-weight: 400;
+    }
+
+}
+
+#portfolioContainer{
+	margin-top:-10%; 
+	justify-content: space-around;
+    z-index: -10;
+    
+    @include smartphone{
+        display:none;
+    }
+
+    @include tablet{
+        display:none;
+    }
+}
+
+.navPosition{
+	z-index: 10;
+	color:$light;
+}
+
+/*Portfolio animado*/
+
+.column {
+	display: none; 
+  }
+
+
+
+.show {
+	display: block;
+ }
+
+ .workHover{
+	 position:relative;
+ }
+
+ .workHover:hover .workOverlay{
+	opacity:1;
+	background-color: rgba(255, 35, 101, 0.8);
+ }
+
+ .workOverlay{
+    position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	opacity: 0;
+	transition: .10s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: 10;
+    
+    a:hover{
+        text-decoration: none;
+    }
+
+    p{
+        font-size:14px;
+        letter-spacing: 5px;
+        text-align: center;
+        font-weight:500;
+        padding:2%;
+        background-color: $highlight;
+        font-family: $p;
+    }
+    h4 {
+        text-align: center;
+        font-family: $h4;
+    }
+ }
+
+ #portfolioMobile{
+    display:none;
+}
+.portfolioCentered{
+   justify-content: center;
+}

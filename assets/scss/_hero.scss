@@ -1,0 +1,89 @@
+
+.hero{
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	height:100vh;
+    padding-top:3%;
+
+    @include smartphone{
+        padding-top:2%
+    }
+    
+    img{
+        cursor:pointer;
+    }
+}
+
+  .hero__presentation{
+    padding-top:10%;
+
+    h1{
+        font-size:110px;
+    }
+    
+    h4{
+        margin-bottom:10%;
+        @include tablet{
+            margin-bottom:5%;
+        }
+    }
+
+    @include tablet{
+        padding-top:2%;
+    
+    }
+
+    @include smartphone{
+        padding-top:35%;
+        text-align: center;
+        h4{
+            padding-bottom:10%;
+        }
+    }
+}
+
+.hero__nav__logo{
+    text-align:left;
+    
+    @include smartphone {
+        img{
+            width:80%;
+        }
+    }
+}
+
+
+.main{
+    background-image: url("../.././img/hero-image-background.jpg");
+}
+.bellsOfSteel{
+    background-image: url("../.././img/bos-back-hero.jpg");
+}
+.beauty{
+    background-image: url("../.././img/beauty-back-hero.jpg");
+}
+.health{
+    background-image: url("../.././img/health-back-hero.jpg");
+}
+.editorial{
+    background-image: url("../.././img/editorial-back-hero.jpg");
+}
+.dreambodytea{
+    background-image: url("../.././img/dreambodytea-back-hero.jpg");
+}
+.home{
+    background-image: url("../.././img/home-back-hero.jpg");
+}
+.neuday{
+    background-image: url("../.././img/neuday-back-hero.jpg");
+}
+.app{
+    background-image: url("../.././img/app-back-hero.jpg");
+}
+.espiral{
+    background-image: url("../.././img/espiral-back-hero.jpg");
+}
+.flicks{
+    background-image: url("../.././img/flicks-back-hero.jpg");
+}

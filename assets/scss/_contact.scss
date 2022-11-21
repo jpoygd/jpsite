@@ -1,0 +1,116 @@
+#contact{
+    background-image: url("../.././img/footer-top.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position: 50% 100%;
+    @include smartphone{
+      padding-bottom:20%;
+      text-align:center;
+    }
+
+   h2{
+       color:$dark;
+   }
+   p{
+       color:$dark;
+       padding-right:10%;
+       line-height: 180%;
+       @include smartphone{
+         padding-right: 0;
+       }
+   }
+
+   input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $light;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    outline:none;
+    @include headings($p,$font-regular, $font, $dark);
+    @include tablet{
+      font-size:14px;
+    }
+  }
+
+  input[type=text]:focus, textarea:focus {
+    border: 2px solid $highlight;
+    @include headings($p,$font-regular, $font, $dark);
+  }
+  
+  .button:hover{
+    color:$highlight;
+  }
+  .downloadResume:hover{
+    color:$dark;
+
+   }
+   .socialMedia{
+       padding-top:8%;
+       padding-right:2%;
+       -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+       -webkit-animation-fill-mode: both;
+       animation-fill-mode: both;
+       -webkit-animation-timing-function: ease-in-out;
+       animation-timing-function: ease-in-out;
+       animation-iteration-count: infinite;
+       -webkit-animation-iteration-count: infinite;
+       @include smartphone{
+         display:none;
+       }
+   }
+
+   img{
+     padding-bottom:10%;
+    position: absolute;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+   }
+   img:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+    }
+
+}
+
+form{
+  padding-bottom:15%;
+}
+
+  @keyframes bounce{
+    15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  }

@@ -1,0 +1,137 @@
+.footer{
+    padding-top:3%;
+    margin-bottom:5%;
+    @include smartphone{
+        display: none;
+    }
+
+    h2{
+        line-height: 80%;
+        font-weight:$font-bold;
+
+    }
+
+    p{
+        color:$light;
+        
+
+    }
+    i{
+        padding-right:4%;
+        line-height: inherit;
+    }
+
+    .phoneEmailContact{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-top:3%;
+        @include tablet{
+            padding-top:0;
+        }
+    }
+    .copyright{
+        p{
+        font-size:14px;
+        color:$darkshadow;
+        margin-bottom:0;
+        }
+        
+    }
+    .socialMediaIcons{
+        padding-right:2%;
+        line-height:inherit;
+        
+        i{
+            font-size:20px;
+            padding-bottom:10%;
+           position: absolute;
+         -webkit-animation-duration: 1s;
+         animation-duration: 1s;
+         -webkit-animation-fill-mode: both;
+         animation-fill-mode: both;
+         -webkit-animation-timing-function: ease-in-out;
+         animation-timing-function: ease-in-out;
+         animation-iteration-count: infinite;
+         -webkit-animation-iteration-count: infinite;
+          }
+          i:hover {
+           cursor: pointer;
+           animation-name: bounce;
+           -moz-animation-name: bounce;
+           color:$darkshadow;
+           }
+
+        
+    }
+
+    @include tablet{
+        padding-right:0;
+        
+        i{
+            padding-right:2%;
+        }
+        .copyright{
+            font-size:12px;
+        }
+        .socialMediaIcons{
+            display: none;
+        }
+    }
+   
+}
+
+@keyframes bounce{
+    15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+
+.footerMobile{
+    display:none;
+    @include smartphone{
+        display: inline-flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color:$highlight;
+        padding:5% 0;
+
+        i{
+            font-size:22px;
+        }
+        .copyright{
+                p{
+                    font-size:10px;
+                    padding-top:5%;
+                    margin-bottom:0;
+                }
+        } 
+       
+    }
+}
+.bottomPaddingFooter{
+    padding-bottom:3%;
+    padding-top:3%;
+}

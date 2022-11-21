@@ -1,0 +1,69 @@
+.hero__nav__hamburger{
+    text-align:right;
+    align-self: center;
+}
+
+
+/*menu animando*/
+/*Menu full viewport*/
+
+.overlayMenu {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color:$dark;
+    background-color:$darkTransparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-family:$font;
+
+    a {
+        padding-bottom: 2%;
+        padding-left:8%;
+        font-size: $h2;
+        font-weight:$font-regular;
+        color:$light;
+        display: block;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    a:hover, a:focus {
+        color:$highlight;
+        font-size:80px;
+        font-weight: $font-bold;
+        text-decoration: none;
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 4%;
+        right: 12%;
+        font-size: $h2;
+        text-decoration: none;
+      }
+
+      @include tablet{
+          a{
+              font-size:$h4;
+          }
+      }
+      @include smartphone{
+        a{
+            padding-left:0;
+        }
+      }
+  }
+
+  .overlayMenuNavBar {
+    position: relative;
+    top: 8%;
+    width: 100vw;
+    text-align: left;
+    margin-top: 30px;
+    left:10%;
+    text-decoration: none;
+  }

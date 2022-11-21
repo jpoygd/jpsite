@@ -1,0 +1,45 @@
+@import 'variables';
+@import 'hero';
+@import 'buttons';
+@import 'services';
+@import 'portfolio';
+@import'aboutMe';
+@import 'responsive';
+@import 'testimonials';
+@import 'contact';
+@import 'footer';
+@import 'navbar';
+@import 'works';
+
+html {
+	scroll-behavior: smooth;
+}
+
+.row{
+    margin:0;
+}
+
+body{
+	background-color: $dark;
+}
+
+.magenta{
+	color:$highlight;
+}
+
+.nopad{
+    padding:0;
+}
+
+.underlineText{
+    border-bottom: $underlineBig;
+}
+
+//texto seleccionado
+
+::-moz-selection { 
+	background: $highlight; 
+}
+::selection { 
+	background: $highlight; 
+}

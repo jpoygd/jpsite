@@ -1,0 +1,112 @@
+.smallDevicesWidth{
+    @include tablet{
+        padding-top:5%;
+    }
+}
+
+.images{
+	width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.servicesArrowRight{
+    img{
+        padding-left:8%;
+        padding-top:2%;
+    }
+    @include smartphone{
+        img{
+            display: none;
+        }
+        h3{
+            text-align: center;
+        }
+    }
+
+} 
+
+.imgPosition{
+	z-index:-10;
+	background-image: url("../.././img/stripes-circle.png");
+	background-position: right bottom;
+    background-repeat: no-repeat;
+    
+    @include smartphone{
+        img{
+            padding-top:15%;
+            width: 100%;
+        }
+    }
+
+    @include tablet{
+        background-image: none;
+        img{
+            width:100%;
+        }
+    }
+}
+
+.imageSpace {
+    img{
+        padding-top:10%;
+        padding-left:10%;
+    }
+    @include tablet{
+        img{
+            display:none;
+        }
+    }
+}
+
+.servicesCategories{
+    padding:0 4%;
+    
+    h4{
+        border-top:$underlineSmall;
+        padding-top:6%;
+    }
+    img{
+        padding-bottom:10%;
+        margin-top:6%;
+    }
+}
+
+/* animacion tipo marquesina*/
+
+.marqueeContainer{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top:-10%; 
+	justify-content: space-around;
+    z-index: -10;
+}
+
+.marquee{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	animation-duration: 10s;
+	animation-name:marquee;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+
+@keyframes marquee{
+	from {left: 500px;}
+	  to {left: -900px;}
+}
+
+.marquee {
+    h1{
+        color:$dark;
+        opacity: 0.1;
+        padding-right:8%;
+        text-shadow:
+         -2px -2px 0 #f2f2f2,  
+          2px -2px 0 #f2f2f2,
+          -2px 2px 0 #f2f2f2,
+           2px 2px 0 #f2f2f2;
+    }
+}
